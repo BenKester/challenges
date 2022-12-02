@@ -6,6 +6,8 @@ def calorie_counter(file_name='input.txt'):
             sum = 0
         else:
             sum += int(row)
+    if sum > 0:
+        yield sum
 
 max_elf = 0
 for elf in calorie_counter():
